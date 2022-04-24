@@ -1,0 +1,36 @@
+{
+  "name": "pptr-project",
+  "version": "1.0.0",
+  "description": "Automated software testing with Puppeteer ",
+  "main": "index.js",
+  "scripts": {
+    "test:example": "./node_modules/mocha/bin/_mocha --timeout=50000 ./tests/example.test.js",
+    "test:device": "./node_modules/mocha/bin/_mocha --timeout=50000 ./tests/device.test.js",
+    "test:e2e": "./node_modules/mocha/bin/_mocha --timeout=50000 ./tests/e2e/*.test.js",
+    "test:coop": "./node_modules/mocha/bin/_mocha --timeout=50000 ./testCoop/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": " "
+  },
+  "keywords": [
+    "Puppeteer",
+    "Mocha",
+    "Chai",
+    "Automation"
+  ],
+  "author": "FLlafquen",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "form-data": "^4.0.0",
+    "json-object": "0.0.3",
+    "mocha": "^9.2.1",
+    "node-fetch": "^3.2.2",
+    "prettier": "^2.5.1",
+    "puppeteer": "^13.5.1",
+    "puppeteer-extra": "^3.2.3",
+    "puppeteer-extra-plugin-recaptcha": "^3.5.0",
+    "puppeteer-firefox": "^0.5.1"
+  }
+}
