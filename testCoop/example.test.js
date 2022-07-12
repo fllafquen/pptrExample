@@ -24,9 +24,6 @@ describe('My first Puppeteer Test', () => {
         })
         const page = await browser.newPage()
 
-          //await page.setDefaultTimeout(50000)
-          //await page.setDefaultNavigationTimeout(50000)
-
         await page.goto("https://webprivadoecdqa2.coopeuch.cl/")
         //await page.waitFor(6000)
         await page.type("#login-input-rut", '179973537', {delay: 20})
